@@ -1,0 +1,298 @@
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  max-width: 390px;
+  margin: 0 auto;
+  background-color: #F0F0F0;
+  font-family: 'Gotham Pro', sans-serif;
+}
+
+.promo {
+  font-size: 12.69px;
+  line-height: 12.15px;
+  background-color: #F19D2F;
+  padding-top: 11px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.logo {
+  background-color: #FFD1AC;
+  padding-top: 19px;
+  padding-bottom: 19px;
+  text-align: center;
+}
+
+.logo__img {
+  display: block;
+  margin: 0 auto;
+}
+
+.logo__text {
+  margin-top: 10px;
+  display: block;
+  font-size: 13px;
+  ;
+}
+
+.banner {
+  position: relative;
+
+}
+
+.banner__img {
+  display: block;
+}
+
+.banner__labels {
+  position: absolute;
+  left: 13px;
+  right: 13px;
+  bottom: 14px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.timer {
+  background-color: #F19D2F;
+  padding: 3px 7px 10px;
+  border-radius: 7px;
+  color: #FFFFFF;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.timer__text {
+  font-size: 11px;
+}
+
+.timer__counter {
+  display: block;
+  margin-top: 8px;
+  font-size: 21.25px;
+}
+
+.discount {
+  background-color: #37D997;
+  border-radius: 5.68px;
+  padding: 6.34px 7px 5.54px;
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+}
+
+.discount__old {
+  position: relative;
+  font-size: 18.08px;
+}
+
+.discount__old::after {
+  content: '';
+  position: absolute;
+  height: 4px;
+  border-radius: 2px;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #E27500;
+}
+
+.discount__new {
+  display: block;
+  margin-top: 7px;
+  font-size: 22.3px;
+}
+
+.product {
+  padding: 11px 16px 40px;
+}
+
+.product__head {
+  display: flex;
+  align-items: center;
+}
+
+.product__head>* {
+  width: 33.33%;
+}
+
+.product__rating {
+  font-size: 12px;
+}
+
+.product__logo {
+  height: 18px;
+}
+
+.product__label {
+  text-align: right;
+  font-size: 12px;
+  color: #37D997;
+  text-decoration: underline;
+}
+
+.product__title {
+  margin-top: 18px;
+  font-size: 19.17px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.product__gallery {
+  margin-top: 20px;
+}
+
+.slider {
+  display: flex;
+  overflow-x: scroll;
+  gap: 24px;
+  scroll-behavior: smooth;
+}
+
+.slide img {
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.preview {
+  margin-top: 20px;
+  display: flex;
+  gap: 12px;
+}
+
+.preview-slide {
+  width: 80px;
+  height: 66px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.preview-slide:active,
+.preview-slide:focus,
+.preview-slide:focus-visible,
+.preview-slide:focus-within,
+.preview-slide:hover {
+  opacity: 0.4;
+}
+
+.preview-slide img {
+  width: 100%;
+  height: 100%;
+}
+
+.product__description {
+  margin-top: 20px;
+}
+
+.product__text {
+  font-size: 15.29px;
+}
+
+.product__text b {
+  font-weight: 700;
+}
+
+.product__text+.product__text {
+  margin-top: 12px;
+}
+
+.product__feedback {
+  margin-top: 12px;
+}
+
+.feedback {
+  display: flex;
+}
+
+.feedback__rate {
+  display: inline-block;
+  width: 14px;
+  height: 13px;
+  background-image: url('./assets/star.svg');
+  background-size: cover;
+  background-position: center;
+}
+
+.feedback__rate+.feedback__rate {
+  margin-left: 4px;
+}
+
+.feedback__counter {
+  font-size: 15px;
+  margin-left: 10px;
+}
+
+.product__filters {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  gap: 16px;
+}
+
+.filter {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.filter__label {
+  font-size: 10px;
+  align-self: center;
+}
+
+.filter__container {
+  position: relative;
+}
+
+.filter__select {
+  margin-top: 4px;
+  height: 50px;
+  font-size: 21px;
+  text-align: center;
+  font-weight: 700;
+  border: 0;
+  border-radius: 15px;
+  background-color: #fff;
+  text-transform: uppercase;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  width: 100%;
+}
+
+.filter__arrow {
+  position: absolute;
+  right: 9px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 7px;
+  background-image: url('./assets/arrowdown.svg');
+  background-size: cover;
+  background-position: center;
+  pointer-events: none;
+}
+
+.button {
+  font-size: 30px;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 8px 0 7px;
+  background-color: #37D997;
+  border: 0;
+  border-radius: 15px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-decoration: none;
+}

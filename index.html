@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <header>
+      <p class="promo">🇿🇦 SPECIAL OFFER + FREE DELIVERY 2-4 DAYS IN SA 🇿🇦</p>
+      <div class="logo">
+        <img class="logo__img" src="./assets/logo.svg" />
+        <span class="logo__text">orthopedic slippers</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="banner">
+        <img class="banner__img" src="./assets/banner.jpg" />
+
+        <div class="banner__labels">
+          <div class="timer">
+            <span class="timer__text">Limited offer</span>
+            <span class="timer__counter">05:00:00</span>
+          </div>
+
+          <div class="discount" contenteditable>
+            <span class="discount__old">R 250.00</span>
+            <span class="discount__new">R 160.00</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="product">
+        <div class="product__head">
+          <span class="product__rating">Excellent 4.8/5</span>
+          <img class="product__logo" src="/assets/product-logo.svg" />
+          <span class="product__label">best selling</span>
+        </div>
+
+        <p class="product__title">Orthopedic Slippers</p>
+
+        <div class="product__gallery">
+          <div class="slider">
+            <div class="slide" id="slide1">
+              <img src="./assets/black.jpg" alt="Slide 1" />
+            </div>
+            <div class="slide" id="slide2">
+              <img src="./assets/orange.jpg" alt="Slide 2" />
+            </div>
+            <div class="slide" id="slide3">
+              <img src="./assets/pink.jpg" alt="Slide 3" />
+            </div>
+            <div class="slide" id="slide4">
+              <img src="./assets/yellow.jpg" alt="Slide 4" />
+            </div>
+          </div>
+          <div class="preview">
+            <a href="#slide1" class="preview-slide">
+              <img src="./assets/black.jpg" alt="Slide 1" />
+            </a>
+            <a href="#slide2" class="preview-slide">
+              <img src="./assets/orange.jpg" alt="Slide 2" />
+            </a>
+            <a href="#slide3" class="preview-slide">
+              <img src="./assets/pink.jpg" alt="Slide 3" />
+            </a>
+            <a href="#slide4" class="preview-slide">
+              <img src="./assets/yellow.jpg" alt="Slide 4" />
+            </a>
+          </div>
+        </div>
+
+        <div class="product__description">
+          <p class="product__text"><b>Fast Delivery:</b> 2-4 days from SA 🇿🇦</p>
+          <p class="product__text">
+            <b>In Stock:</b> Shipping from Johannesburg 🇿🇦
+          </p>
+
+          <div class="product__feedback">
+            <div class="feedback">
+              <span class="feedback__rate"></span>
+              <span class="feedback__rate"></span>
+              <span class="feedback__rate"></span>
+              <span class="feedback__rate"></span>
+              <span class="feedback__rate"></span>
+              <p class="feedback__counter">(10)</p>
+            </div>
+          </div>
+
+          <div class="product__filters">
+            <div class="filter">
+              <label class="filter__label" for="color"> color </label>
+              <div class="filter__container">
+                <select name="color" id="color" class="filter__select">
+                  <option value="Black">Black</option>
+                  <option value="Orange">Orange</option>
+                  <option value="Pink">Pink</option>
+                  <option value="Yellow">Yellow</option>
+                </select>
+                <div class="filter__arrow"></div>
+              </div>
+            </div>
+
+            <div class="filter">
+              <label class="filter__label" for="size"> size </label>
+              <div class="filter__container">
+                <select name="size" id="size" class="filter__select">
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+                <div class="filter__arrow"></div>
+              </div>
+            </div>
+          </div>
+
+          <a href="https://www.youtube.com/" target="_blank" class="button">
+            Buy now
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <script src="./index.js" defer></script>
+  </body>
+</html>
